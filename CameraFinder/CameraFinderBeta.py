@@ -1,3 +1,14 @@
+## Reecepbcups - December 10th, 2018.
+## Discord: Reecepbcups#3370
+
+# A python app to scan google dorks and gather network cameras to homes, businesses, and the Government
+# Ex. http://camera.buffalotrace.com/view/view.shtml?id=92509&imagePath=/mjpg/video.mjpg&size=1
+
+# ---------------------------------------------------------------------------------
+# THIS SOFTWARE HAS LITTLE TESTING, BUT IS MORE OPTOMIZED. USE "Camera_Finder.py" 
+# in the main area to run the less efficent code, but more reliable 
+# ---------------------------------------------------------------------------------
+
 try:
   
   from googlesearch import search 
@@ -8,8 +19,7 @@ except:
   print('!!Install google and requests modules!!')
   print('Open CMD >> pip install -r requirements.txt')
 
-# Example
-# http://camera.buffalotrace.com/view/view.shtml?id=92509&imagePath=/mjpg/video.mjpg&size=1
+
         
 ips = [] # blank list for the ips to go into
 
