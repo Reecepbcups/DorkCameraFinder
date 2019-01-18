@@ -39,24 +39,24 @@ def get():
 def output():
     
 # Things to ignore that are not actual webcams
-ignore_list = ['alibaba','gov','fda','edu','amazon','ebay','shop']
+  ignore_list = ['alibaba','gov','fda','edu','amazon','ebay','shop']
 
-for item in ips: # grabs a camera ip/domain
-    
-    if item in ignore_list: # checks if it has the list, if so ignore 
-        pass
-    
-    else: # output into the files
-        with open('ips.txt', 'a') as f:
-            f.write(item + "\n")
-            f.close()
+  for item in ips: # grabs a camera ip/domain
+      
+      if item in ignore_list: # checks if it has the list, if so ignore 
+          pass
+      
+      else: # output into the files
+          with open('ips.txt', 'a') as f:
+              f.write(item + "\n")
+              f.close()
 
-        if 'gov' in item:
-            with open('government_sites.txt', 'a') as f:
-            f.write(item + "\n\n")
-            f.close()
+          if 'gov' in item:
+              with open('government_sites.txt', 'a') as f:
+                f.write(item + "\n\n")
+                f.close()
 
-        if 'edu' in item:
-            with open('school_sites.txt', 'a') as f:
-            f.write(item + "\n\n")
-            f.close()
+          if 'edu' in item:
+              with open('school_sites.txt', 'a') as f:
+                f.write(item + "\n\n")
+                f.close()
