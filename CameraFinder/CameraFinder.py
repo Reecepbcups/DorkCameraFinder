@@ -1,7 +1,7 @@
 ## Reecepbcups - January 17th, 2019
 ## Discord: Reecepbcups#3370
 
-# Be sure to pip install googlesearch
+# Be sure to pip install google OR pip3 install google
 from googlesearch import search 
 import requests
 
